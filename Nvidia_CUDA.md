@@ -16,7 +16,7 @@ I got a GTX 1070 GPU just right after it was released and got problems in instal
 11. Now you can install CUDA 8.0 toolkit.
 12.  ```chmod +x ./cuda_[version]_linux.run``` and ```sudo ./cuda_[version]_linux.run```
 13.  accept the terms 
-14.  Choose **no** for the question "Install NVIDIA Accelerated Graphic Driver for Linux-x86_64 367.48
+14.  Choose **no** for the question "Install NVIDIA Accelerated Graphic Driver for Linux-x86_64 367.48"
 15.  you can now reboot. 
 15. follow instructions in http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#post-installation-actions to add paths.
 
