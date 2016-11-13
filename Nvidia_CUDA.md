@@ -1,5 +1,5 @@
 # How to solve the incompatible issue of new NVIDIA GPU and CUDA 8.0 on Ubuntu
-I got a GTX 1070 GPU just right after it was released so I got problems in installing CUDA 8.0 toolkit because the driver version in CUDA was too old that it did not support the new GPU.Hence, I was not able to login to my system on the interface, it only display the login. Below is what I did to solve this problem.
+I got a GTX 1070 GPU just right after it was released and got problems in installing CUDA 8.0 toolkit. The driver version in CUDA toolkit was too old that it did not support the new GPU. Hence, I was not able to login to my system on the interface, it only display the login again and again. Below is what I did to solve this problem.
 
 
 1. remove all installed NIVIDA drivers ```sudo apt-get purge nvidia-*```
@@ -20,4 +20,4 @@ I got a GTX 1070 GPU just right after it was released so I got problems in insta
 15.  you can now reboot. 
 15. follow instructions in http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#post-installation-actions to add paths.
 
-Last update: Sat Nov 12 20:23:34 PST 2016
+Last update: Sat Nov 12 20:48:29 PST 2016
