@@ -2,92 +2,109 @@
 # coins in a line, value of coins
 
 
-def makeTable(line):
-    value = []  # value table
-    # initialize the value table
-    for i in range(len(line)):
-        aList = []
-        for j in range(len(line)):
-            aList.append(None)
-        value.append(aList)
+def makeTable(A):
+	DP = []  # value table
+	# initialize the value table
+	for i in range(len(A)):
+		aList = []
+		for j in range(len(A)):
+			aList.append(None)
+		DP.append(aList)
 
-    # calculate values for table
-    for i in range(len(line)):
-        value[i][i] = line[i]
-    for s in range(2, len(line) + 1):
-        for i in range(0, len(line) - s + 1):
-            j = i + s - 1
-            value[i][j] = max(line[i] - value[i + 1][j],
-                              line[j] - value[i][j - 1])
+	# calculate values for table
+	for i in range(len(A)):
+		DP[i][i] = A[i]
+	for s in range(2, len(A) + 1):
+		for i in range(0, len(A) - s + 1):
+			j = i + s - 1
+			DP[i][j] = max(A[i] - DP[i + 1][j],
+			               A[j] - DP[i][j - 1])
+	# print the result value table
+	# j horizontal, i vertical
+	for i in range(len(A)):
+		print(DP[i])
 
-    # print the result value table
-    # j horizontal, i vertical
-    for i in range(len(line)):
-        print(value[i])
+	print("\nTime: O(n^2)")
+	return DP
 
-    print("\nTime: O(n^2)")
-    return value
+def makeMove(i, j, DP, A):
+	"""
+	it will make move when there is A[i:j+1] left
+	"""
+	if i == j:
+		print("i == j, take A[i] ", A[i])
+		return A[i]
+	takeLeft = A[i] - DP[i + 1][j]
+	takeRight = A[j] - DP[i][j - 1]
+	if takeLeft > takeRight:
+		# pick left
+		return A[i]
 
-
-def makeMove(i, j, value, line):
-    if i == j:
-        print("i == j, ", line[i])
-        return line[i]
-    takeLeft = line[i] - value[i + 1][j]
-    takeRight = line[j] - value[i][j - 1]
-    if takeLeft > takeRight:
-        print("take left, ", takeLeft)
-        print("result string: ", line[i + 1: j])
-        makeMove(i + 1, j, value, line)
-
-    else:
-        print("take right, ", takeRight)
-        print("result string: ", line[i: j - 1])
-        makeMove(i, j - 1, value, line)
+	else:
+		# pick right
+		return A[j]
 
 
-line = [9, 1, 7, 3, 2, 8, 9, 3]
-# line = [3, 5, 4, 1]
-value = makeTable(line)
-makeMove(0, len(line) - 1, value, line)
+player1 = "Alice"
+player2 = "Bob"
+playerdict = {player1:player2, player2: player1}
+scoreDict = {player1:0, player2:0}
+
+def simulation(i, j, DP, A, player):
+	"""
+	It will simulate the whole progress of the game
+	"""
+	if i == j:
+		print("i == j,", player, " take A[i]", A[i])
+		scoreDict[player] += A[i]
+		print(player, " score: ", scoreDict[player])
+		return DP[i][j]
+	takeLeft = A[i] - DP[i + 1][j]
+	takeRight = A[j] - DP[i][j - 1]
+	if takeLeft > takeRight:
+		print(player, " take left, ", A[i])
+		scoreDict[player] += A[i]
+		print(player, " score: ", scoreDict[player])
+		print("result string: ", A[i + 1: j+1])
+
+		# call to make move for the next player
+		return simulation(i + 1, j, DP, A, playerdict[player])
+
+	else:
+		print(player, " take right, ", A[j])
+		scoreDict[player] += A[j]
+		print(player, " score: ", scoreDict[player])
+		print("result string: ", A[i: j])
+		# call to make move for the next player
+		return simulation(i, j - 1, DP, A, playerdict[player])
+
+
+
+A = [ 9, 1, 7, 3, 2, 8, 9, 3]
+DP = makeTable(A)
+simulation(0, len(A) - 1, DP, A, "Alice")
 # output:
-# [9, 8, 3, 12, 4, 6, 3, 12]
-# [None, 1, 6, -3, 5, 3, 6, -3]
-# [None, None, 7, 4, 6, 2, 7, 4]
-# [None, None, None, 3, 1, 7, 2, 3]
-# [None, None, None, None, 2, 6, 3, 0]
-# [None, None, None, None, None, 8, 1, 2]
-# [None, None, None, None, None, None, 9, 6]
-# [None, None, None, None, None, None, None, 3]
-#
 # Time: O(n^2)
-# take left,  12
+# Alice  take left,  9
+# Alice  score:  9
+# result string:  [1, 7, 3, 2, 8, 9, 3]
+# Bob  take right,  3
+# Bob  score:  3
 # result string:  [1, 7, 3, 2, 8, 9]
-# take right,  -3
+# Alice  take right,  9
+# Alice  score:  18
 # result string:  [1, 7, 3, 2, 8]
-# take right,  6
+# Bob  take right,  8
+# Bob  score:  11
 # result string:  [1, 7, 3, 2]
-# take right,  3
+# Alice  take right,  2
+# Alice  score:  20
 # result string:  [1, 7, 3]
-# take right,  5
+# Bob  take right,  3
+# Bob  score:  14
 # result string:  [1, 7]
-# take right,  -3
+# Alice  take right,  7
+# Alice  score:  27
 # result string:  [1]
-# take right,  6
-# result string:  []
-# i == j,  1
-
-
-# [3, 2, 2, 1]
-# [None, 5, 1, 2]
-# [None, None, 4, 3]
-# [None, None, None, 1]
-#
-# Time: O(n^2)
-# take left,  1
-# result string:  [5, 4]
-# take left,  2
-# result string:  [4]
-# take left,  3
-# result string:  []
-# i == j,  1
+# i == j, Bob  take A[i] 1
+# Bob  score:  15
