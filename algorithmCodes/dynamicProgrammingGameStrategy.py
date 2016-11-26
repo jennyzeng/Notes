@@ -34,9 +34,9 @@ def makeMove(i, j, DP, A):
 	if i == j:
 		print("i == j, take A[i] ", A[i])
 		return A[i]
-	takeLeft = A[i] - DP[i + 1][j]
-	takeRight = A[j] - DP[i][j - 1]
-	if takeLeft > takeRight:
+	takeLeft = DP[i + 1][j]
+	takeRight = DP[i][j - 1]
+	if takeLeft < takeRight:
 		# pick left
 		return A[i]
 
@@ -84,6 +84,16 @@ A = [ 9, 1, 7, 3, 2, 8, 9, 3]
 DP = makeTable(A)
 simulation(0, len(A) - 1, DP, A, "Alice")
 # output:
+# Time: O(n^2)
+# [9, 8, 3, 12, 4, 6, 3, 12]
+# [None, 1, 6, -3, 5, 3, 6, -3]
+# [None, None, 7, 4, 6, 2, 7, 4]
+# [None, None, None, 3, 1, 7, 2, 3]
+# [None, None, None, None, 2, 6, 3, 0]
+# [None, None, None, None, None, 8, 1, 2]
+# [None, None, None, None, None, None, 9, 6]
+# [None, None, None, None, None, None, None, 3]
+#
 # Time: O(n^2)
 # Alice  take left,  9
 # Alice  score:  9
