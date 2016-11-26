@@ -18,4 +18,4 @@ About what I learned and what I solved.
 - [Quiz3 Review: Propositional Logic & First-order Logic](./CS171/quiz3/quiz3review.md.pdf)
 
 ## Linux
-- [How to solve the incompatibility issue of new NVIDIA GPU and CUDA 8.0 on Ubuntu](./Nvidia_CUDA.md) 
+- [How to solve the incompatibility issue of new NVIDIA GPU and CUDA 8.0 on Ubuntu](./Linux/Nvidia_CUDA.md) 
