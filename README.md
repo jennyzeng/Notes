@@ -3,10 +3,11 @@ About what I learned and what I solved.
 ## Notes for classes
 
 ### CompSci 161: Algorithm
+- [mergeSort](./algorithmCodes/mergeSort.py)
 - [PowerMod algorithm](./algorithmCodes/powerMod.py)
 - [Longest Common Subsequence algorithm](./algorithmCodes/longestCommanSubsequence.py)
 - [Coins-in-a-line question I: take one coin from either side](./algorithmCodes/dynamicProgrammingGameStrategy.py)
-- [Coins-in-a-line question II - take any number of coins from a side](./algorithmCodes/dynamicProgrammingGameStrategy2.py)
+- [Coins-in-a-line question II - take any number of coins from either side](./algorithmCodes/dynamicProgrammingGameStrategy2.py)
 
 
 ### CompSci 171: Introduction to Artificial Intelligence
