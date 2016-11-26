@@ -4,6 +4,8 @@ About what I learned and what I solved.
 
 ### CompSci 161: Algorithm
 - [mergeSort](./algorithmCodes/mergeSort.py)
+- [quickSort](./algorithmCodes/quickSort.py)
+- [In-place quickSort](./algorithmCodes/inPlaceQuickSort.py)
 - [PowerMod algorithm](./algorithmCodes/powerMod.py)
 - [Longest Common Subsequence algorithm](./algorithmCodes/longestCommanSubsequence.py)
 - [Coins-in-a-line question I: take one coin from either side](./algorithmCodes/dynamicProgrammingGameStrategy.py)

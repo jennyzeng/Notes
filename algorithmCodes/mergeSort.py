@@ -1,3 +1,4 @@
+# Merge sort, a O(nlogn) algorithm
 def mergeSort(L):
 	if len(L) <= 1:
 		return L
@@ -24,11 +25,12 @@ def merge(left, right):
 
 
 ## test
-test1 = [2, 5, 1, 6, 3, 9, 7]
+test1 = [2, 5, 1, 0, 6, 3, 9, 7]
 print(mergeSort(test1))
 test2 = [1, 2, 3, 4, 5, 7, 9]
 print(mergeSort(test2))
 print(mergeSort([2, 3, 2, 4, 2, 3, 1]))
+print(mergeSort([-2, -3, 2, -4, 2, 3, 1]))
 print(mergeSort([3,2]))
 print(mergeSort([0]))
 print(mergeSort([]))
