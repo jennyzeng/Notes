@@ -4,15 +4,15 @@ About what I learned and what I solved.
 
 ### CompSci 161: Intro to Algorithm
 #### Sorting:
-- [mergeSort](./algorithmCodes/mergeSort.py)
-- [quickSort](./algorithmCodes/quickSort.py)
-- [In-place quickSort](./algorithmCodes/inPlaceQuickSort.py)
+- [MergeSort](./algorithmCodes/mergeSort.py)
+- [QuickSort](./algorithmCodes/quickSort.py)
+- [In-place QuickSort](./algorithmCodes/inPlaceQuickSort.py)
 
-#### Algorithms for Arithmetic
-- [PowerMod algorithm](./algorithmCodes/powerMod.py)
+#### Algorithms for Arithmetic:
+- [PowerMod](./algorithmCodes/powerMod.py)
 
 #### Dynamic programming:
-- [Longest Common Subsequence algorithm](./algorithmCodes/longestCommanSubsequence.py)
+- [Longest Common Subsequence](./algorithmCodes/longestCommanSubsequence.py)
 - [Coins-in-a-line question I: take one coin from either side](./algorithmCodes/dynamicProgrammingGameStrategy.py)
 - [Coins-in-a-line question II: take any number of coins from either side](./algorithmCodes/dynamicProgrammingGameStrategy2.py)
 
