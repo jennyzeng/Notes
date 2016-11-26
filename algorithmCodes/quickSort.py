@@ -6,9 +6,17 @@ def quickSort(L):
 	if len(L) <= 1:
 		return L
 	pivot = L[random.randint(0, len(L) - 1)]
-	left = [x for x in L if x < pivot]
-	equal = [x for x in L if x == pivot]
-	right = [x for x in L if x > pivot]
+	left = []
+	right = []
+	equal = []
+	for x in L:
+		if x < pivot:
+			left.append(x)
+		elif x == pivot:
+			equal.append(x)
+		else:
+			right.append(x)
+
 	return quickSort(left) + equal + quickSort(right)
 
 
