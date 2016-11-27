@@ -1,4 +1,4 @@
-# technicalLog
+# Notes
 About what I learned and what I solved.
 ## Notes for classes
 
