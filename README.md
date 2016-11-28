@@ -28,7 +28,7 @@ About what I learned and what I solved.
 
 ## Notes for classes
 ### CompSci 171: Intro to Artificial Intelligence
-**Note:** I use Haroopad to write Markdown files because it has many interesting features. However, they may not show properly on GitHub. In quiz reviews below, they are linked to pdf files. If you are interested in reading the original markdown files, you can still find them in CS171 directory.
+**Note:** I use Haroopad to write Markdown files because it has many interesting features. However, they may not show properly on GitHub. Quiz reviews below are linked to pdf files. If you are interested in reading the original markdown files, you can still find them in CS171 directory.
 - [Quiz1 Review: Basic Agent Concepts and Search Strategies](./CS171/quiz1_review.pdf)
 - [Quiz3 Review: Propositional Logic & First-order Logic](./CS171/quiz3/quiz3review.md.pdf)
 - [Quiz4 Review: Probability, Baysian Networks, Machine Learning](./CS171/quiz4/quiz4Review.md.pdf)
