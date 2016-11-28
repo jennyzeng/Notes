@@ -2,25 +2,31 @@
 About what I learned and what I solved.
 
 
-## Notes for Classes
+## Algorithms
 
-### CompSci 161: Intro to Algorithm
-#### Sorting:
+### data structure
+#### Linked List
+- [linkedList basic manipulations](./algorithmCodes/linkedListPractices.py)
+
+#### Tree search
+- [depth first search: Matrix of Water Cloud Land](./algorithmCodes/waterCloudLand.py)
+
+### Sorting
 - [MergeSort](./algorithmCodes/mergeSort.py)
 - [QuickSort](./algorithmCodes/quickSort.py)
 - [In-place QuickSort](./algorithmCodes/inPlaceQuickSort.py)
 
-#### Algorithms for Arithmetic:
+### Algorithms for Arithmetic
 - [PowerMod](./algorithmCodes/powerMod.py)
 
-#### Dynamic programming:
+### Dynamic programming
 - [Longest Common Subsequence](./algorithmCodes/longestCommanSubsequence.py)
 - [Coins-in-a-line question I: take one coin from either side](./algorithmCodes/dynamicProgrammingGameStrategy.py)
 - [Coins-in-a-line question II: take any number of coins from either side](./algorithmCodes/dynamicProgrammingGameStrategy2.py)
 - [Minimum Path Sum](./algorithmCodes/MinimumPathSum.py)
 
 
-
+## Notes for classes
 ### CompSci 171: Intro to Artificial Intelligence
 **Note:** I use Haroopad to write Markdown files because it has many interesting features. However, they may not show properly on GitHub. In quiz reviews below, they are linked to pdf files. If you are interested in reading the original markdown files, you can still find them in CS171 directory.
 - [Quiz1 Review: Basic Agent Concepts and Search Strategies](./CS171/quiz1_review.pdf)
