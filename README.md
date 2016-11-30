@@ -25,6 +25,8 @@ About what I learned and what I solved.
 - [Coins-in-a-line question II: take any number of coins from either side](./algorithmCodes/dynamicProgrammingGameStrategy2.py)
 - [Minimum Path Sum](./algorithmCodes/MinimumPathSum.py)
 
+### Some other interesting algorithms
+- [Fibonacci Number: Recurrence, DP, Linear Algebra](./algorithmCodes/fibonacci.py)
 
 ## Notes for classes
 ### CompSci 171: Intro to Artificial Intelligence
