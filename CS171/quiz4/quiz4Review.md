@@ -107,6 +107,18 @@ for all x,y,z
 - **Training Set**: Example input-output pairs, from which to discover a hypothesis
 - **Unsupervised Learning**: Agent learns patterns in the input with no explicit feedback
 - **Overfitting**: Choose an over-complex model based on irrelevant data patterns
+- **Support Vector Machine: **Current most-popular "off-the-shelf" supervised learning method.
+
+#### True or False
+True:
+- A decision tree can learn and represent any Boolean function.
+- Overfitting is a general phenomenon that occurs with most of all types of learners.
+- An agent is learning if it improves its performance on future tasks after making observations about the world.
+
+False:
+- The information gain from an attribute A is how much classifier accuracy improves when attribute A is added to the example feature vectors in the training set. 
+- Cross-validation is a way to imrpove the accuracy of a learned hypothesis by reducing over-fitting using Ockham's razor.
+
 
 ### Decision Tree
 ![decisionTree](decisionTree.png "" "width:60%")
