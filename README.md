@@ -4,12 +4,11 @@ About what I learned and what I solved.
 
 ## Algorithms
 
-### data structure
-#### Linked List
+### data structures
 - [Linked List](./algorithmCodes/linkedListPractices.py)
 - [Binary Heap](./algorithmCodes/binaryheap.py)
 
-#### Tree search
+### Tree search
 - [depth first search: Matrix of Water Cloud Land](./algorithmCodes/waterCloudLand.py)
 
 ### Sorting
