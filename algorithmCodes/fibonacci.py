@@ -2,7 +2,7 @@ import numpy as np
 
 """
 from cs 161 lecture 1
-three different algorithms for Fibnacci Numbers
+three different algorithms for Fibonacci Numbers
 Definition:
 F(0) = 0
 F(1) = 1

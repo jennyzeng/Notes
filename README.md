@@ -6,12 +6,14 @@ About what I learned and what I solved.
 
 ### data structure
 #### Linked List
-- [linkedList basic manipulations](./algorithmCodes/linkedListPractices.py)
+- [Linked List](./algorithmCodes/linkedListPractices.py)
+- [Binary Heap](./algorithmCodes/binaryheap.py)
 
 #### Tree search
 - [depth first search: Matrix of Water Cloud Land](./algorithmCodes/waterCloudLand.py)
 
 ### Sorting
+- [SelectionSort](./algorithmCodes/selectionSort.py)
 - [MergeSort](./algorithmCodes/mergeSort.py)
 - [QuickSort](./algorithmCodes/quickSort.py)
 - [In-place QuickSort](./algorithmCodes/inPlaceQuickSort.py)
