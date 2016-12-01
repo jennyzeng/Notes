@@ -8,6 +8,7 @@ About what I learned and what I solved.
 - [Linked List](./algorithmCodes/linkedListPractices.py)
 - [Binary Heap](./algorithmCodes/binaryheap.py)
 - [Hash Table: word frequencies problem](./algorithmCodes/wordFrequencies.py)
+
 ### Tree search
 - [depth first search: Matrix of Water Cloud Land](./algorithmCodes/waterCloudLand.py)
 
