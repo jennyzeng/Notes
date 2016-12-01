@@ -3,13 +3,9 @@
 
 
 def makeTable(A):
-	DP = []  # value table
 	# initialize the value table
-	for i in range(len(A)):
-		aList = []
-		for j in range(len(A)):
-			aList.append(None)
-		DP.append(aList)
+	DP = [[None]*len(A) for _ in range(len(A))]  # value table
+
 
 	# calculate values for table
 	for i in range(len(A)):

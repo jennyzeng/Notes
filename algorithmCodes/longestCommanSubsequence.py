@@ -5,14 +5,7 @@ X = "skullandbones"
 Y = "lullabybabies"
 
 # initiallize a matrix
-matrix = []
-for i in range(len(X) + 1):
-	# matrix.append(list())
-	line = []
-	for j in range(len(Y) + 1):
-		line.append(None)
-	matrix.append(line)
-
+matrix = [[None]*(len(Y)+1) for _ in range(len(X)+1)]
 # first goal: find alternating sub-sequence of maximum length.
 #   L[i][j] = len of LCS(first i char of X, first j char of Y)
 # analysis:
@@ -57,6 +50,6 @@ LCS.reverse()
 
 print("longest common sub-sequence: \n", LCS)
 
-print("Time: O(len(X) + len(Y)")
+print("Time: O(len(X) + len(Y))")
 
 # recursive version

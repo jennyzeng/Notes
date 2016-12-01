@@ -21,4 +21,5 @@ def makeTable(matrix):
 	DP = [[None] * matrix[0] for _ in range(len(matrix))]
 	DP[0][0] = matrix[0][0]
 	for i in range(len(matrix)):
+		pass
 		

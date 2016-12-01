@@ -7,7 +7,7 @@ About what I learned and what I solved.
 ### data structures
 - [Linked List](./algorithmCodes/linkedListPractices.py)
 - [Binary Heap](./algorithmCodes/binaryheap.py)
-
+- [Hash Table: word frequencies problem](./algorithmCodes/wordFrequencies.py)
 ### Tree search
 - [depth first search: Matrix of Water Cloud Land](./algorithmCodes/waterCloudLand.py)
 
@@ -31,10 +31,10 @@ About what I learned and what I solved.
 
 ## Notes for classes
 ### CompSci 171: Intro to Artificial Intelligence
-**Note:** I use Haroopad to write Markdown files because it has many interesting features. However, they may not show properly on GitHub. Quiz reviews below are linked to pdf files. If you are interested in reading the original markdown files, you can still find them in CS171 directory.
-- [Quiz1 Review: Basic Agent Concepts and Search Strategies](./CS171/quiz1_review.pdf)
-- [Quiz3 Review: Propositional Logic & First-order Logic](./CS171/quiz3/quiz3review.md.pdf)
-- [Quiz4 Review: Probability, Baysian Networks, Machine Learning](./CS171/quiz4/quiz4Review.md.pdf)
+**Note:** I use Haroopad to write Markdown files because it has many interesting features. However, they may not show properly on GitHub. Quiz reviews below are linked to converted html web pages. If you are interested in reading the original markdown files, you can still find them in CS171 directory.
+- [Quiz1 Review: Basic Agent Concepts and Search Strategies](https://jennyzeng.github.io/Notes/CS171/quiz1_review.html)
+- [Quiz3 Review: Propositional Logic & First-order Logic](https://jennyzeng.github.io/Notes/CS171/quiz3/quiz3review.html)
+- [Quiz4 Review: Probability, Baysian Networks, Machine Learning](https://jennyzeng.github.io/Notes/CS171/quiz3/quiz3review.html)
 
 ## Linux
 - [How to solve the incompatibility issue of new NVIDIA GPU and CUDA 8.0 on Ubuntu](./Linux/Nvidia_CUDA.md) 

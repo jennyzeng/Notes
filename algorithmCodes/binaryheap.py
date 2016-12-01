@@ -3,11 +3,11 @@ Binary Heap
 Definition:
 	store our items as an array. e.g X[0],X[1],..
 	 but we think of it as a (binary) tree
-	        X[0]
-		/          \
-	X[1]            X[2]
-	/   \           /   \
-X[3]    X[4]      X[5]  ...
+             X[0]
+         /          \
+     X[1]           X[2]
+    /    \           /   \
+X[3]    X[4]       X[5]  ...
 
 parent of X[i]: X[ floor( (i-1)/2 )]
 Children of X[i]: X[2i+1], X[2i+2]
