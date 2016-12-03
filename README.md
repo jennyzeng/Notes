@@ -6,7 +6,7 @@ About what I learned and what I solved.
 
 ### data structures
 - [Linked List](./algorithmCodes/linkedListPractices.py)
-- [Binary Heap](./algorithmCodes/binaryheap.py)
+- [Binary Heap and Heap Sort](./algorithmCodes/binaryheap.py)
 - [Hash Table: word frequencies problem](./algorithmCodes/wordFrequencies.py)
 
 ### Tree search

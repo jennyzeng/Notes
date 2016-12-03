@@ -42,9 +42,21 @@ class binaryHeap:
 		return self._L[0] if len(self._L) > 0 else None
 
 	def removeMin(self):  # O(log n)
+		if len(self._L) == 0: return # nothing to remove
 		self._swap(0, len(self._L) - 1)
 		del self._L[-1]
 		self._heapify(0)  # index 0: the out-of -place element that we just moved
+
+	def poll(self):
+		# get and remove
+		if len(self._L) == 0: return None
+		myMin = self.getMin()
+		self.removeMin()
+		return myMin
+
+	def isEmpty(self):
+		return len(self._L) == 0
+
 
 	def insert(self, x):  # O(log n)
 		self._L.append(x)  # add at end of array
@@ -88,6 +100,15 @@ class binaryHeap:
 		self._L[a], self._L[b] = self._L[b], self._L[a]
 
 
+def heapSort(A):
+	bHeap = binaryHeap()
+	bHeap.create(A)
+	result = []
+	while not bHeap.isEmpty():
+		result.append(bHeap.poll())
+	return result
+
+
 ## test
 heap = binaryHeap()
 heap.create([3, 1, 9, 6, 2, 5])  # [1,2,5,6,3,9]
@@ -100,3 +121,6 @@ heap.removeMin()  # [1, 2, 5, 6, 3, 9, 7]
 print("removeMin: ", heap)
 heap.removeMin()  # [2, 3, 5, 6, 7, 9]
 print("removeMin: ", heap)
+
+print("heap sort:", heapSort([3, 1, 9, 6, 2, 5]))
+print("heap sort:", heapSort([]))
