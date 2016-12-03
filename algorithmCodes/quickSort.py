@@ -1,4 +1,5 @@
 # quickSort, randomized comparison sorting. O(nlogn)
+# valid sort, but not stable sort
 import random
 
 

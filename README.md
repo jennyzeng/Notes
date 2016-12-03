@@ -10,13 +10,17 @@ About what I learned and what I solved.
 - [Hash Table: word frequencies problem](./algorithmCodes/wordFrequencies.py)
 
 ### Tree search
-- [depth first search: Matrix of Water Cloud Land](./algorithmCodes/waterCloudLand.py)
+- [Binary Search](./algorithmCodes/binarySearch.py)
+- [Depth First Search: Matrix of Water Cloud Land](./algorithmCodes/waterCloudLand.py)
 
 ### Sorting
 - [SelectionSort](./algorithmCodes/selectionSort.py)
+- [bucketSort](./algorithmCodes/bucketSort.py)
+- [radixSort and Base Conversions](./algorithmCodes/radixSort.py)
 - [MergeSort](./algorithmCodes/mergeSort.py)
 - [QuickSort](./algorithmCodes/quickSort.py)
 - [In-place QuickSort](./algorithmCodes/inPlaceQuickSort.py)
+- [QuickSelect](./algorithmCodes/quickSelect.py)
 
 ### Algorithms for Arithmetic
 - [PowerMod](./algorithmCodes/powerMod.py)
@@ -36,4 +40,4 @@ About what I learned and what I solved.
 **Note:** I use Haroopad to write Markdown files because it has many interesting features. However, they may not show properly on GitHub. Quiz reviews below are linked to converted html web pages. If you are interested in reading the original markdown files, you can still find them in CS171 directory.
 - [Quiz1 Review: Basic Agent Concepts and Search Strategies](https://jennyzeng.github.io/Notes/CS171/quiz1_review.html)
 - [Quiz3 Review: Propositional Logic & First-order Logic](https://jennyzeng.github.io/Notes/CS171/quiz3/quiz3review.html)
-- [Quiz4 Review: Probability, Baysian Networks, Machine Learning](https://jennyzeng.github.io/Notes/CS171/quiz3/quiz3review.html)
+- [Quiz4 Review: Probability, Baysian Networks, Machine Learning](https://jennyzeng.github.io/Notes/CS171/quiz4/quiz4Review.html)

@@ -1,4 +1,4 @@
-# Merge sort, a O(nlogn) algorithm
+# Merge sort, a O(nlogn) algorithm, is stable sort
 def mergeSort(L):
 	if len(L) <= 1:
 		return L

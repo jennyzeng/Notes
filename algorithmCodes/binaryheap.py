@@ -100,7 +100,7 @@ class binaryHeap:
 		self._L[a], self._L[b] = self._L[b], self._L[a]
 
 
-def heapSort(A):
+def heapSort(A):    #O(nlog n)
 	bHeap = binaryHeap()
 	bHeap.create(A)
 	result = []
