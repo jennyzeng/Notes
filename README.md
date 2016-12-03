@@ -26,6 +26,7 @@ About what I learned and what I solved.
 - [Coins-in-a-line question I: take one coin from either side](./algorithmCodes/dynamicProgrammingGameStrategy.py)
 - [Coins-in-a-line question II: take any number of coins from either side](./algorithmCodes/dynamicProgrammingGameStrategy2.py)
 - [Minimum Path Sum](./algorithmCodes/MinimumPathSum.py)
+- [Maximum Minimum Path](./algorithmCodes/DPMaximumMinimumPath.py)
 
 ### Some other interesting algorithms
 - [Fibonacci Number: Recurrence, DP, Linear Algebra](./algorithmCodes/fibonacci.py)
@@ -36,6 +37,3 @@ About what I learned and what I solved.
 - [Quiz1 Review: Basic Agent Concepts and Search Strategies](https://jennyzeng.github.io/Notes/CS171/quiz1_review.html)
 - [Quiz3 Review: Propositional Logic & First-order Logic](https://jennyzeng.github.io/Notes/CS171/quiz3/quiz3review.html)
 - [Quiz4 Review: Probability, Baysian Networks, Machine Learning](https://jennyzeng.github.io/Notes/CS171/quiz3/quiz3review.html)
-
-## Linux
-- [How to solve the incompatibility issue of new NVIDIA GPU and CUDA 8.0 on Ubuntu](./Linux/Nvidia_CUDA.md) 
