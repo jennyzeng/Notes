@@ -4,36 +4,42 @@ About what I learned and what I solved.
 
 ## Algorithms
 
-### data structures
-- [Linked List](./algorithmCodes/linkedListPractices.py)
-- [Binary Heap and Heap Sort](./algorithmCodes/binaryheap.py)
-- [Hash Table: word frequencies problem](./algorithmCodes/wordFrequencies.py)
+### Data Structures
+- [Linked List](algorithmCodes/dataStructure/linkedListPractices.py)
+- [Binary Heap and Heap Sort](algorithmCodes/dataStructure/binaryheap.py)
+- [Hash Table: Word Frequencies Problem](algorithmCodes/dataStructure/wordFrequencies.py)
 
-### Tree search
-- [Binary Search](./algorithmCodes/binarySearch.py)
-- [Depth First Search: Matrix of Water Cloud Land](./algorithmCodes/waterCloudLand.py)
+### Tree Search
+- [Binary Search](algorithmCodes/treeSearch/binarySearch.py)
+- [Depth First Search: Matrix of Water Cloud Land](algorithmCodes/treeSearch/waterCloudLand.py)
 
 ### Sorting
-- [SelectionSort](./algorithmCodes/selectionSort.py)
-- [bucketSort](./algorithmCodes/bucketSort.py)
-- [radixSort and Base Conversions](./algorithmCodes/radixSort.py)
-- [MergeSort](./algorithmCodes/mergeSort.py)
-- [QuickSort](./algorithmCodes/quickSort.py)
-- [In-place QuickSort](./algorithmCodes/inPlaceQuickSort.py)
-- [QuickSelect](./algorithmCodes/quickSelect.py)
+- [SelectionSort](algorithmCodes/sorting/selectionSort.py)
+- [BucketSort](algorithmCodes/sorting/bucketSort.py)
+- [RadixSort and Base Conversions](algorithmCodes/sorting/radixSort.py)
+- [MergeSort](algorithmCodes/sorting/mergeSort.py)
+- [QuickSort](algorithmCodes/sorting/quickSort.py)
+- [In-place QuickSort](algorithmCodes/sorting/inPlaceQuickSort.py)
+- [QuickSelect](algorithmCodes/sorting/quickSelect.py)
 
 ### Algorithms for Arithmetic
-- [PowerMod](./algorithmCodes/powerMod.py)
+- [Karatsuba Multiplication](algorithmCodes/arithmetic/karatsuba.py)
+- [Greatest Common Divisors (Euclid)](algorithmCodes/arithmetic/gcd.py)
+- [Power Mod](algorithmCodes/arithmetic/powerMod.py)
 
-### Dynamic programming
-- [Longest Common Subsequence](./algorithmCodes/longestCommanSubsequence.py)
-- [Coins-in-a-line question I: take one coin from either side](./algorithmCodes/dynamicProgrammingGameStrategy.py)
-- [Coins-in-a-line question II: take any number of coins from either side](./algorithmCodes/dynamicProgrammingGameStrategy2.py)
-- [Minimum Path Sum](./algorithmCodes/MinimumPathSum.py)
-- [Maximum Minimum Path](./algorithmCodes/DPMaximumMinimumPath.py)
+### Graph
+- [Python Graph Representation](algorithmCodes/graph/graphRepresentations.py)
+- [Depth First Search and Strong Connectivity](algorithmCodes/graph/dfs.py)
 
-### Some other interesting algorithms
-- [Fibonacci Number: Recurrence, DP, Linear Algebra](./algorithmCodes/fibonacci.py)
+### Dynamic Programming
+- [Longest Common Subsequence](algorithmCodes/dynamicProgramming/longestCommanSubsequence.py)
+- [Coins-in-a-line question I: take one coin from either side](algorithmCodes/dynamicProgramming/dynamicProgrammingGameStrategy.py)
+- [Coins-in-a-line question II: take any number of coins from either side](algorithmCodes/dynamicProgramming/dynamicProgrammingGameStrategy2.py)
+- [Minimum Path Sum](algorithmCodes/dynamicProgramming/MinimumPathSum.py)
+- [Maximum Minimum Path](algorithmCodes/dynamicProgramming/DPMaximumMinimumPath.py)
+
+### Some Other Interesting Algorithms
+- [Fibonacci Number: Recurrence, DP, Linear Algebra](algorithmCodes/others/fibonacci.py)
 
 ## Notes for classes
 ### CompSci 171: Intro to Artificial Intelligence
