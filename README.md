@@ -30,11 +30,14 @@ About what I learned and what I solved.
 ### Graph
 - [Python Graph Representation](algorithmCodes/graph/graphRepresentations.py)
 - [Depth First Search and Strong Connectivity](algorithmCodes/graph/dfs.py)
+- [DAG and Topological Order](algorithmCodes/graph/topologicalOrder.py)
+- [DAG, Bellman-Ford, and Dijkstra Shortest Paths](algorithmCodes/graph/shortestPaths.py)
+- [Minimum Spanning Tree](algorithmCodes/graph/minimumSpanningTree.py)
 
 ### Dynamic Programming
 - [Longest Common Subsequence](algorithmCodes/dynamicProgramming/longestCommanSubsequence.py)
-- [Coins-in-a-line question I: take one coin from either side](algorithmCodes/dynamicProgramming/dynamicProgrammingGameStrategy.py)
-- [Coins-in-a-line question II: take any number of coins from either side](algorithmCodes/dynamicProgramming/dynamicProgrammingGameStrategy2.py)
+- [Coins-in-a-line question I: Take one coin from either side](algorithmCodes/dynamicProgramming/dynamicProgrammingGameStrategy.py)
+- [Coins-in-a-line question II: Take any number of coins from either side](algorithmCodes/dynamicProgramming/dynamicProgrammingGameStrategy2.py)
 - [Minimum Path Sum](algorithmCodes/dynamicProgramming/MinimumPathSum.py)
 - [Maximum Minimum Path](algorithmCodes/dynamicProgramming/DPMaximumMinimumPath.py)
 

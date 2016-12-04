@@ -12,6 +12,7 @@ def dfs(vertex, visited, graph):
 		if w not in visited:
 			dfs(w, visited, graph)
 
+
 """
 time analysis:
 for a graph with n vertices and m edges, then we make <= n calls to visit, and <= m iterations of loop
@@ -60,7 +61,9 @@ print(strongConnectivity(graph))  # False
 graph2 = DirectedGraph()
 graph2.createFromDict({1: {2, 3}, 2: {1, 3}, 3: {1, 2}})
 print(strongConnectivity(graph2))  # True
-# time analysis:
-# reverse takes O(n+m)
-# 2 dfs: O(2*(n+m))
-# total time: O(n+m)
+"""
+time analysis:
+reverse takes O(n+m)
+2 dfs: O(2*(n+m))
+total time: O(n+m)
+"""
