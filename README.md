@@ -35,9 +35,11 @@ About what I learned and what I solved.
 - [Minimum Spanning Tree](algorithmCodes/graph/minimumSpanningTree.py)
 
 ### Dynamic Programming
+- [Subtract A Square Game](algorithmCodes/dynamicProgramming/subtractAsquare.py)
+- [Coins-in-a-line Game I: Take one coin from either side](algorithmCodes/dynamicProgramming/dynamicProgrammingGameStrategy.py)
+- [Coins-in-a-line Game II: Take any number of coins from either side](algorithmCodes/dynamicProgramming/dynamicProgrammingGameStrategy2.py)
 - [Longest Common Subsequence](algorithmCodes/dynamicProgramming/longestCommanSubsequence.py)
-- [Coins-in-a-line question I: Take one coin from either side](algorithmCodes/dynamicProgramming/dynamicProgrammingGameStrategy.py)
-- [Coins-in-a-line question II: Take any number of coins from either side](algorithmCodes/dynamicProgramming/dynamicProgrammingGameStrategy2.py)
+- [Knapsack](algorithmCodes/dynamicProgramming/knapsack.py)
 - [Minimum Path Sum](algorithmCodes/dynamicProgramming/MinimumPathSum.py)
 - [Maximum Minimum Path](algorithmCodes/dynamicProgramming/DPMaximumMinimumPath.py)
 
