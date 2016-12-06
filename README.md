@@ -52,3 +52,4 @@ About what I learned and what I solved.
 - [Quiz1 Review: Basic Agent Concepts and Search Strategies](https://jennyzeng.github.io/Notes/CS171/quiz1_review.html)
 - [Quiz3 Review: Propositional Logic & First-order Logic](https://jennyzeng.github.io/Notes/CS171/quiz3/quiz3review.html)
 - [Quiz4 Review: Probability, Baysian Networks, Machine Learning](https://jennyzeng.github.io/Notes/CS171/quiz4/quiz4Review.html)
+- [Final Review: Almost cover everything we learned in FQ 2016](https://jennyzeng.github.io/Notes/CS171/final_review/final_review.html)
