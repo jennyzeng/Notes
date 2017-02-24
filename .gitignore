@@ -11,7 +11,7 @@
 # User-specific stuff:
 .idea/workspace.xml
 .idea/tasks.xml
-
+*.xml
 # Sensitive or high-churn files:
 .idea/dataSources/
 .idea/dataSources.ids
@@ -100,3 +100,12 @@ local.properties
 # Code Recommenders
 .recommenders/
 
+.idea/TechnicalLog.iml
+.idea/markdown-navigator.xml
+.idea/markdown-navigator/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+algorithmCodes/.idea/markdown-navigator/
+algorithmCodes/.idea/vcs.xml
+algorithmCodes/helpers/__pycache__/
