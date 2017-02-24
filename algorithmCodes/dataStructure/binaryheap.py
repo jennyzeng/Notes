@@ -32,81 +32,80 @@ require that value(parent) < value(child)   ---- min heap
 
 
 class binaryHeap:
-	def __init__(self):
-		self._L = []
+    def __init__(self):
+        self._L = []
 
-	def __str__(self):
-		return str(self._L)
+    def __str__(self):
+        return str(self._L)
 
-	def getMin(self):  # O(1)
-		return self._L[0] if len(self._L) > 0 else None
+    def getMin(self):  # O(1)
+        return self._L[0] if len(self._L) > 0 else None
 
-	def removeMin(self):  # O(log n)
-		if len(self._L) == 0: return # nothing to remove
-		self._swap(0, len(self._L) - 1)
-		del self._L[-1]
-		self._heapify(0)  # index 0: the out-of -place element that we just moved
+    def removeMin(self):  # O(log n)
+        if len(self._L) == 0: return  # nothing to remove
+        self._swap(0, len(self._L) - 1)
+        del self._L[-1]
+        self._heapify(0)  # index 0: the out-of -place element that we just moved
 
-	def poll(self):
-		# get and remove
-		if len(self._L) == 0: return None
-		myMin = self.getMin()
-		self.removeMin()
-		return myMin
+    def poll(self):
+        # get and remove
+        if len(self._L) == 0: return None
+        myMin = self.getMin()
+        self.removeMin()
+        return myMin
 
-	def isEmpty(self):
-		return len(self._L) == 0
+    def isEmpty(self):
+        return len(self._L) == 0
+
+    def insert(self, x):  # O(log n)
+        self._L.append(x)  # add at end of array
+        for i in range((len(self._L) - 1) // 2, -1, -1):
+            self._heapify(i)  # repeatedly swap upwards
+
+    def create(self, A):
+        self._L = A
+        for i in range((len(self._L) - 1) // 2, -1, -1):  # for i = n-1, n-2,..., 0:
+            self._heapify(i)  # swap downwards, starting from L[i]
+
+    def _left(self, i):  # left child of i
+        return 2 * i + 1
+
+    def _right(self, i):  # right child of i
+        return 2 * i + 2
+
+    def _parent(self, i):  # parent of i
+        return (i - 1) // 2
+
+    def _heapify(self, i):  # swapping process starting from i. go downward
+        parent = i
+        while True:
+            left = self._left(parent)
+            right = self._right(parent)
+            smallest = None
+            if left < len(self._L) and self._L[left] < self._L[parent]:
+                smallest = left
+            else:
+                smallest = parent
+            if right < len(self._L) and self._L[right] < self._L[smallest]:
+                smallest = right
+
+            if smallest != parent:
+                self._swap(smallest, parent)
+                parent = smallest  # swapped, this become the smallest one
+            else:
+                break
+
+    def _swap(self, a, b):
+        self._L[a], self._L[b] = self._L[b], self._L[a]
 
 
-	def insert(self, x):  # O(log n)
-		self._L.append(x)  # add at end of array
-		for i in range((len(self._L) - 1) // 2, -1, -1):
-			self._heapify(i)  # repeatedly swap upwards
-
-	def create(self, A):
-		self._L = A
-		for i in range((len(self._L) - 1) // 2, -1, -1):  # for i = n-1, n-2,..., 0:
-			self._heapify(i)  # swap downwards, starting from L[i]
-
-	def _left(self, i):  # left child of i
-		return 2 * i + 1
-
-	def _right(self, i):  # right child of i
-		return 2 * i + 2
-
-	def _parent(self, i):  # parent of i
-		return (i - 1) // 2
-
-	def _heapify(self, i):  # swapping process starting from i. go downward
-		parent = i
-		while True:
-			left = self._left(parent)
-			right = self._right(parent)
-			smallest = None
-			if left < len(self._L) and self._L[left] < self._L[parent]:
-				smallest = left
-			else:
-				smallest = parent
-			if right < len(self._L) and self._L[right] < self._L[smallest]:
-				smallest = right
-
-			if smallest != parent:
-				self._swap(smallest, parent)
-				parent = smallest  # swapped, this become the smallest one
-			else:
-				break
-
-	def _swap(self, a, b):
-		self._L[a], self._L[b] = self._L[b], self._L[a]
-
-
-def heapSort(A):    #O(nlog n)
-	bHeap = binaryHeap()
-	bHeap.create(A)
-	result = []
-	while not bHeap.isEmpty():
-		result.append(bHeap.poll())
-	return result
+def heapSort(A):  # O(nlog n)
+    bHeap = binaryHeap()
+    bHeap.create(A)
+    result = []
+    while not bHeap.isEmpty():
+        result.append(bHeap.poll())
+    return result
 
 
 ## test

@@ -56,7 +56,10 @@ def lcs(X, Y, matrix):
 
 X = "skullandbones"
 Y = "lullabybabies"
-print("longest common sub-sequence: \n", lcs(X, Y, getTable(X, Y)))
+matrix = getTable(X, Y)
+for i in range(len(matrix)):
+	print(matrix[i])
+print("longest common sub-sequence: \n", lcs(X, Y, matrix))
 
 print("Time: O(len(X) + len(Y))")
 

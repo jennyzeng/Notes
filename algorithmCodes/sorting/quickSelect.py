@@ -3,6 +3,7 @@ import random
 """
 quick select:
 find the kth smallest element in a list
+k is 0 indexing
 
 """
 
@@ -16,7 +17,7 @@ def quickSelect(X, k):  # no worse than quicksort
 	for e in X:
 		if e < pivot:
 			L.append(e)
-		if e > pivot:
+		elif e > pivot:
 			G.append(e)
 		else:
 			E.append(e)

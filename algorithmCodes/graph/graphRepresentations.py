@@ -161,21 +161,21 @@ class DirectedGraphWithWeights:
 	# edge of the graph has a value
 	def __init__(self):
 		self.adjList = defaultdict(dict)
-	
+
 	# def createFromDict(self, d):
 	# 	self.adjList = defaultdict(set, d)
-	
+
 	def addVertex(self, vertex):
 		if vertex not in self.adjList:
 			self.adjList.update({vertex: dict()})
 			return True
 		else:
 			return False
-	
+
 	def addVertices(self, vertices):
 		for v in vertices:
 			self.addVertex(v)
-	
+
 	def addEdge(self, edge: tuple):
 		# edge representation (x,y,v) x->y, edge value = v
 		# so it is {x:{y: v}}
