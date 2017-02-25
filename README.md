@@ -56,9 +56,10 @@ About what I learned and what I solved.
 - [Assignment #3: Texture Quilting](CS116/Texture_Quilting)
 
 ### CompSci 178: Machine Learning
-- [HW1: k Nearest Neighbor predictions, Naive Bayes Classifiers](CS178/cs178hw1.ipynb)
-- [HW2: Linear Regression, Cross-validation](CS178/cs178hw2.ipynb)
-- [HW3: Perceptrons and Logistic Regression, Shattering and VC Dimension](CS178/cs178hw3.ipynb)
+- [HW1: k Nearest Neighbor predictions, Naive Bayes Classifiers](CS178/cs178hw1.ipynb)  [(requirements)](CS178/HW1.pdf)
+- [HW2: Linear Regression, Cross-validation](CS178/cs178hw2.ipynb)  [(requirements)](CS178/HW2.pdf)
+- [HW3: Perceptrons and Logistic Regression, Shattering and VC Dimension](CS178/cs178hw3.ipynb) [(requirements)](CS178/HW3.pdf)
+- [HW4: Decision Trees, Random Forests, Kaggle](CS178/cs178hw4.ipynb) [(requirements)](CS178/HW4.pdf)
 
 ### CompSci 171: Intro to Artificial Intelligence
 **Note:** I use Haroopad to write Markdown files because it has many interesting features. However, they may not show properly on GitHub. Quiz reviews below are linked to converted html web pages. If you are interested in reading the original markdown files, you can still find them in CS171 directory.
