@@ -22,10 +22,11 @@ About what I learned and what I solved.
 - [In-place QuickSort](algorithmCodes/sorting/inPlaceQuickSort.py)
 - [QuickSelect](algorithmCodes/sorting/quickSelect.py)
 
-### Algorithms for Arithmetic
+### Arithmetic or Bit Manipulation
 - [Karatsuba Multiplication](algorithmCodes/arithmetic/karatsuba.py)
 - [Greatest Common Divisors (Euclid)](algorithmCodes/arithmetic/gcd.py)
 - [Power Mod](algorithmCodes/arithmetic/powerMod.py)
+- [Hamming Distance](algorithmCodes/arithmetic/hammingDistance.py)
 
 ### Graph
 - [Python Graph Representation](algorithmCodes/graph/graphRepresentations.py)
