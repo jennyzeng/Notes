@@ -55,6 +55,7 @@ About what I learned and what I solved.
 - [Assignment #1: MATLAB warmup and Demosaicing](CS116/MATLAB_warmup_and_Demosaicing)
 - [Assignment #2: Homography Mosaics](CS116/Homography_Mosaics)
 - [Assignment #3: Texture Quilting](CS116/Texture_Quilting)
+- [Assignment #4: Object Detection](CS116/Object_Detection)
 
 ### CompSci 178: Machine Learning
 - [HW1: k Nearest Neighbor predictions, Naive Bayes Classifiers](CS178/cs178hw1.ipynb)  [(requirements)](CS178/HW1.pdf)
