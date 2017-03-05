@@ -7,7 +7,7 @@ zhaohuaz@uci.edu
 
 # 2. test detect code
 ## input1:
-![input](inputimg1.jpg)
+![input](inputimg.jpg)
 ![temp](temp.jpg)
 ### result:
 ![result_1](result1.jpg)
