@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div style="margin: auto;width: 50%;border: 3px solid green;padding: 10px;">
+        <div style="margin-left: auto; margin-right:auto; width: 6em">
+            <h4>Let's Sing</h4>
+            <p style=" margin: 0; font-size:200px;" id="music">
+            </p>
+            <button type="button" onclick="document.getElementById('music').innerHTML = myFunction()">
+Click me.</button>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var output = "";
+            ranInt = getRandomInt(0, 7);
+            if (ranInt == 0) {
+                output += "i";
+            } else {
+                output += ranInt.toString();
+            }
+            return output;
+        }
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    </script>
+</body>
+
+</html>
