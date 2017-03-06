@@ -72,4 +72,4 @@ About what I learned and what I solved.
 
 
 ## very simple HTML
-- [music symbol generator](simpleHTML/musicGen/musicGen.html)
+- [music symbol generator](https://jennyzeng.github.io/Notes/musicGen/musicGen.html)
