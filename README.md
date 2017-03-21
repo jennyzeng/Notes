@@ -56,14 +56,18 @@ About what I learned and what I solved.
 - [Assignment #2: Homography Mosaics](CS116/Homography_Mosaics)
 - [Assignment #3: Texture Quilting](CS116/Texture_Quilting)
 - [Assignment #4: Object Detection](CS116/Object_Detection)
+- [Assignment #5: Face Morphing](CS116/Face_Morphing)
 
 ### CompSci 178: Machine Learning
+
 - [HW1: k Nearest Neighbor predictions, Naive Bayes Classifiers](CS178/cs178hw1.ipynb)  [(requirements)](CS178/HW1.pdf)
 - [HW2: Linear Regression, Cross-validation](CS178/cs178hw2.ipynb)  [(requirements)](CS178/HW2.pdf)
 - [HW3: Perceptrons and Logistic Regression, Shattering and VC Dimension](CS178/cs178hw3.ipynb) [(requirements)](CS178/HW3.pdf)
 - [HW4: Decision Trees, Random Forests, Kaggle](CS178/cs178hw4.ipynb) [(requirements)](CS178/HW4.pdf)
+- [HW5: Clustering, Eigen Faces](CS178/cs178hw5.ipynb) [(requirements)](CS178/HW5.pdf)
 
 ### CompSci 171: Intro to Artificial Intelligence
+
 **Note:** I use Haroopad to write Markdown files because it has many interesting features. However, they may not show properly on GitHub. Quiz reviews below are linked to converted html web pages. If you are interested in reading the original markdown files, you can still find them in CS171 directory.
 - [Quiz1 Review: Basic Agent Concepts and Search Strategies](https://jennyzeng.github.io/Notes/CS171/quiz1_review.html)
 - [Quiz3 Review: Propositional Logic & First-order Logic](https://jennyzeng.github.io/Notes/CS171/quiz3/quiz3review.html)
