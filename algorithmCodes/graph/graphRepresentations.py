@@ -61,7 +61,11 @@ class UndirectedGraph:
 class UndirectedGraphWithWeights:
 	def __init__(self):
 		self.adjList = defaultdict(dict)
-	
+	def __len__(self):
+		return len(self.adjList)
+	def __eq__(self, other):
+		self.adjList == other.adjList
+
 	def createFromDict(self, d):
 		self.adjList = defaultdict(dict, d)
 	
@@ -76,13 +80,13 @@ class UndirectedGraphWithWeights:
 		for v in vertices:
 			self.addVertex(v)
 	
-	def addEdge(self, edge: tuple):
-		self.adjList[edge[0]].update({edge[1]: edge[2]})
-		self.adjList[edge[1]].update({edge[0]: edge[2]})
+	def addEdge(self, u, v, w):
+		self.adjList[u].update({v: w})
+		self.adjList[v].update({u: w})
 	
 	def addEdges(self, edges):
-		for edge in edges:
-			self.addEdge(edge)
+		for u,v,w in edges:
+			self.addEdge(u,v,w)
 	
 	def getVertices(self):
 		return [v for v in self.adjList]
@@ -93,10 +97,28 @@ class UndirectedGraphWithWeights:
 			return {}
 		else:
 			return neighbors
-	
-	def edgeExist(self, edge):
-		return edge[1] in self.adjList[edge[0]] and self.adjList[edge[0]] == edge[2]
-	
+
+	def getEdgeWeight(self, u, v):
+		if u in self.adjList:
+			if v in self.adjList[u]:
+				return self.adjList[u][v]
+		else:
+			return None
+	def edgeExist(self, u,v):
+		return v in self.adjList[u]
+
+	def getAllEdges(self):
+		edges = []
+		visited=set()
+		for v in self.adjList:
+			for w in self.adjList[v]:
+				if w not in visited:
+					edges.append((v, w, self.adjList[v][w]))
+			visited.add(v)
+		return edges
+
+
+
 	def __str__(self):
 		return str(self.adjList)
 	

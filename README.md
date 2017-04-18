@@ -1,10 +1,14 @@
 # Notes
 About what I learned and what I solved.
 
-
 ## Algorithms
 
+Many algorithms here are from [CS161 Design and Analysis of Algorithms](http://www.ics.uci.edu/~eppstein/161/) and [CS163 Graph Algorithms](http://www.ics.uci.edu/~goodrich/teach/graph/). I write Python codes to better comprehend the concepts I learned. 
+
+A small portion of algorithms and examples are from Online Coding Interview Practice websites such as [Hackerrank](hackerrank.com) and [LeetCode](leetcode.com/problemset/algorithms/).
+
 ### Data Structures
+
 - [Linked List](algorithmCodes/dataStructure/linkedListPractices.py)
 - [Binary Heap and Heap Sort](algorithmCodes/dataStructure/binaryheap.py)
 - [Hash Table: Word Frequencies Problem](algorithmCodes/dataStructure/wordFrequencies.py)
@@ -33,7 +37,7 @@ About what I learned and what I solved.
 - [Depth First Search and Strong Connectivity](algorithmCodes/graph/dfs.py)
 - [DAG and Topological Order](algorithmCodes/graph/topologicalOrder.py)
 - [DAG, Bellman-Ford, and Dijkstra Shortest Paths](algorithmCodes/graph/shortestPaths.py)
-- [Minimum Spanning Tree](algorithmCodes/graph/minimumSpanningTree.py)
+- [3 Different Minimum Spanning Tree Algorithms: Prim-Jarnik's, Kruskal's, Baruvka's](algorithmCodes/graph/minimumSpanningTree.py)
 
 ### Dynamic Programming
 - [Subtract A Square Game](algorithmCodes/dynamicProgramming/subtractAsquare.py)
@@ -44,27 +48,38 @@ About what I learned and what I solved.
 - [Minimum Path Sum](algorithmCodes/dynamicProgramming/MinimumPathSum.py)
 - [Maximum Minimum Path](algorithmCodes/dynamicProgramming/DPMaximumMinimumPath.py)
 - [HouseRobber](algorithmCodes/dynamicProgramming/houseRobber.py)
-- [MATLAB Matrix Shortest Path](CS116/Texture_Quilting/shortest_path.m)
 
 ### Some Other Interesting Algorithms
 - [Fibonacci Number: Recurrence, DP, Linear Algebra](algorithmCodes/others/fibonacci.py)
 
-## Notes/Assignments for classes
+## Notes for courses
+Because of the [Policy about Academic Integrity](https://aisc.uci.edu/redirect-honesty.php?from=index.php) at UCI, I am not able to post my coursework online. If you are interested in knowing what I have done for CS courses in the following topics, please email me: <jennyzengzzh@gmail.com>
+- **CS178: Machine Learning**
+    - k Nearest Neighbor predictions, Naive Bayes Classifiers
+    - Linear Regression, Cross-validation
+    - Perceptrons and Logistic Regression, Shattering and VC Dimension
+    - Decision Trees, Random Forests, Kaggle
+    - Clustering, Eigen Faces
+    - Class project on rainfall prediction: Use Scikit-Learn Library for SVM, Gradient Boost, Adaboost, Random Forest. (Rank top 6% on Class Kaggle Leaderboard)
 
-### CompSci 116: Computational Photography and Vision
-- [Assignment #1: MATLAB warmup and Demosaicing](CS116/MATLAB_warmup_and_Demosaicing)
-- [Assignment #2: Homography Mosaics](CS116/Homography_Mosaics)
-- [Assignment #3: Texture Quilting](CS116/Texture_Quilting)
-- [Assignment #4: Object Detection](CS116/Object_Detection)
-- [Assignment #5: Face Morphing](CS116/Face_Morphing)
+- **CS 116: Computational Photography and Vision**
 
-### CompSci 178: Machine Learning
 
-- [HW1: k Nearest Neighbor predictions, Naive Bayes Classifiers](CS178/cs178hw1.ipynb)  [(requirements)](CS178/HW1.pdf)
-- [HW2: Linear Regression, Cross-validation](CS178/cs178hw2.ipynb)  [(requirements)](CS178/HW2.pdf)
-- [HW3: Perceptrons and Logistic Regression, Shattering and VC Dimension](CS178/cs178hw3.ipynb) [(requirements)](CS178/HW3.pdf)
-- [HW4: Decision Trees, Random Forests, Kaggle](CS178/cs178hw4.ipynb) [(requirements)](CS178/HW4.pdf)
-- [HW5: Clustering, Eigen Faces](CS178/cs178hw5.ipynb) [(requirements)](CS178/HW5.pdf)
+    - Demosaicing
+    - Homography Mosaics
+    - Texture Quilting
+    - Object Detection
+    - Face Morphing
+
+- **CS 171: Intro to Artificial Intelligence**
+
+    Besides my reviews online, I also did an interesting AI project called **Connect-K** using Java for this class.  Here is a paper by Jenny Lam. She introduces Connect-k board game and analyzes some heuristic methods: [link](http://www.jennylam.cc/assets/pdf/connectk.pdf)
+
+    My partner Xin Shen and I implemented MiniMax algorithm with Alpha-beta pruning technique and an admissible heuristic function. Our AI beat 90% of other AIs.
+
+- **CS 122A: Introduction to Data Management (On progress)**
+
+    - Construct E-R Data Model
 
 ### CompSci 171: Intro to Artificial Intelligence
 
@@ -75,5 +90,3 @@ About what I learned and what I solved.
 - [Final Review: Almost cover everything we learned in FQ 2016](https://jennyzeng.github.io/Notes/CS171/final_review/final_review.html)
 
 
-## very simple HTML
-- [music symbol generator](https://jennyzeng.github.io/Notes/musicGen/musicGen.html)
