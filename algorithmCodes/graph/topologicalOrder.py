@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-from graph.graphRepresentations import DirectedGraph, DirectedGraphWithWeights
+from graphRepresentations import DirectedGraph, DirectedGraphWithWeights
 
 """
 from cs161 note15

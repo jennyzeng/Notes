@@ -99,7 +99,7 @@ local.properties
 
 # Code Recommenders
 .recommenders/
-
+*.idea
 .idea/TechnicalLog.iml
 .idea/markdown-navigator.xml
 .idea/markdown-navigator/
@@ -109,3 +109,7 @@ local.properties
 algorithmCodes/.idea/markdown-navigator/
 algorithmCodes/.idea/vcs.xml
 algorithmCodes/helpers/__pycache__/
+.idea/
+
+algorithmCodes/graph/__pycache__/
+/algorithmCodes/.idea/

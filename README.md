@@ -1,9 +1,13 @@
 # Notes
 About what I learned and what I solved.
 
+My specializations are Algorithms and Intelligent Systems. Thus, most of my upper division course work are related to these two fields.
+
 ## Algorithms
 
-Many algorithms here are from [CS161 Design and Analysis of Algorithms](http://www.ics.uci.edu/~eppstein/161/) and [CS163 Graph Algorithms](http://www.ics.uci.edu/~goodrich/teach/graph/). I write Python codes to better comprehend the concepts I learned. 
+**Algorithms are very interesting!**
+
+Many algorithms here are from [CS161 Design and Analysis of Algorithms](http://www.ics.uci.edu/~eppstein/161/) and [CS163 Graph Algorithms](http://www.ics.uci.edu/~goodrich/teach/graph/). I write Python codes to enhance my understanding on those algorithms.
 
 A small portion of algorithms and examples are from Online Coding Interview Practice websites such as [Hackerrank](hackerrank.com) and [LeetCode](leetcode.com/problemset/algorithms/).
 
@@ -38,6 +42,11 @@ A small portion of algorithms and examples are from Online Coding Interview Prac
 - [DAG and Topological Order](algorithmCodes/graph/topologicalOrder.py)
 - [DAG, Bellman-Ford, and Dijkstra Shortest Paths](algorithmCodes/graph/shortestPaths.py)
 - [3 Different Minimum Spanning Tree Algorithms: Prim-Jarnik's, Kruskal's, Baruvka's](algorithmCodes/graph/minimumSpanningTree.py)
+- All Pairs Shortest Paths Algorithm:
+    - [Johnson's algorithm](algorithmCodes/graph/APSP+JohnsonsAlg.py)
+
+- Centrality:
+    - [Closeness Centrality](algorithmCodes/graph/centrality.py)
 
 ### Dynamic Programming
 - [Subtract A Square Game](algorithmCodes/dynamicProgramming/subtractAsquare.py)
@@ -80,6 +89,8 @@ Because of the [Policy about Academic Integrity](https://aisc.uci.edu/redirect-h
 - **CS 122A: Introduction to Data Management (On progress)**
 
     - Construct E-R Data Model
+    - Relational Algebra
+    - Relational Calculus
 
 ### CompSci 171: Intro to Artificial Intelligence
 

@@ -1,8 +1,8 @@
 from collections import defaultdict
 
-from graph.graphRepresentations import DirectedGraphWithWeights
-from graph.topologicalOrder import another_topological_ordering_edge_with_value
-from helpers.priodict import priorityDictionary
+from graphRepresentations import DirectedGraph,UndirectedGraph
+from topologicalOrder import another_topological_ordering_edge_with_value
+from priodict import priorityDictionary
 
 """
 from cs161 note16
@@ -32,9 +32,9 @@ def relax(D, P, x, y, dis):
 	if D[x] + dis < D[y]:
 		P[y] = x
 		D[y] = D[x] + dis
+		print("change {} <- {}".format(y, D[y]))
 
-
-def DAGshortestPath(start, graph: DirectedGraphWithWeights):
+def DAGshortestPath(start, graph):
 	"""
 	DAG shortest path only works when there is no cycle in the graph (has a topological order)
 	"""
@@ -57,7 +57,7 @@ def DAGshortestPath(start, graph: DirectedGraphWithWeights):
 
 # time: O(n+m) + O(n+m) = O(n+m)
 
-def BellmanFordShortestPath(start, graph: DirectedGraphWithWeights):
+def BellmanFordShortestPath(start, graph):
 	"""
 	BellmanFord works for graphs that will have a shortest path, it is allowed to have negative edges,
 	but not negative cycles
@@ -73,16 +73,16 @@ def BellmanFordShortestPath(start, graph: DirectedGraphWithWeights):
 	
 	edges = graph.getEdges()
 	for _ in range(len(graph)):
-		for edge in edges:
+		for u,v,w in edges:
 			# after i iterations of outer loop, first i levels of shortest path tree become correct
-			relax(D, P, edge[0], edge[1], edge[2])
+			relax(D, P, u, v, w)
 	return D, P
 
 
 # O(mn)
 
-
-def DijkstraShortestPath(start, graph: DirectedGraphWithWeights):
+# edited to let algorithm work for both directed and undirected graphs
+def DijkstraShortestPath(start, graph):
 	"""
 	Dijkstra works for graphs that might have cycles(not DAGs), but requires all edge weights > 0
 	 other wise, may produce incorrect distances)
@@ -103,10 +103,12 @@ def DijkstraShortestPath(start, graph: DirectedGraphWithWeights):
 		P[v] = None
 		Q[v] = D[v]
 	
-	for v in Q:
+	for v in Q:# extract min
 		for w, k in graph.getNeighbors(v).items():
-			relax(D, P, v, w, k)
-			Q[w] = D[w]
+			if w in Q:
+				relax(D, P, v, w, k)
+				Q[w] = D[w]
+
 	return D, P
 
 
@@ -123,13 +125,23 @@ def getShortestPath(D, P, terminal):
 	return output, distance
 
 
-g = DirectedGraphWithWeights()
-g.addEdges(
-	[("S", "A", 3), ("S", "C", 2), ("A", "B", 5), ("C", "B", 9), ("C", "D", 4), ("B", "T", 2), ("D", "T", 3)])
+# g = DirectedGraphWithWeights()
+# g.addEdges(
+# 	[("S", "A", 3), ("S", "C", 2), ("A", "B", 5), ("C", "B", 9), ("C", "D", 4), ("B", "T", 2), ("D", "T", 3)])
+#
+# D, P = DAGshortestPath("S", g)
+# print("DAG result: ", getShortestPath(D, P, "T"))  # (['C', 'D', 'T'], 9)
+# D, P = BellmanFordShortestPath("S", g)
+# print("bellman-ford result: ", getShortestPath(D, P, "T"))
+# D, P = DijkstraShortestPath("S", g)
+# print("Dijkstra result: ", getShortestPath(D, P, "T"))
+if __name__ == '__main__':
 
-D, P = DAGshortestPath("S", g)
-print("DAG result: ", getShortestPath(D, P, "T"))  # (['C', 'D', 'T'], 9)
-D, P = BellmanFordShortestPath("S", g)
-print("bellman-ford result: ", getShortestPath(D, P, "T"))
-D, P = DijkstraShortestPath("S", g)
-print("Dijkstra result: ", getShortestPath(D, P, "T"))
+	g = UndirectedGraph()
+	g.addEdges([("A", "B", 22), ("A", "C", 9), ("A", "D", 12), ("B", "C", 35), ("B", "F", 36), ("B", "H", 34),
+	            ("C", "D", 4), ("C", "E", 65), ("C", "F", 42), ("D", "E", 33), ("D", "I", 30), ("E", "F", 18),
+	            ("E", "G", 23), ("F", "G", 39), ("F", "H", 24), ("G", "H", 25), ("G", "I", 21), ("H", "I", 19)])
+	D, P = DijkstraShortestPath("A", g)
+	print(sorted(D.items()))
+	print(P)
+
