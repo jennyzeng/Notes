@@ -60,6 +60,7 @@ A small portion of algorithms and examples are from Online Coding Interview Prac
 - [Minimum Path Sum](algorithmCodes/dynamicProgramming/MinimumPathSum.py)
 - [Maximum Minimum Path](algorithmCodes/dynamicProgramming/DPMaximumMinimumPath.py)
 - [HouseRobber](algorithmCodes/dynamicProgramming/houseRobber.py)
+- [Regular Expression Matching](algorithmCodes/dynamicProgramming/REmatching.py)
 
 ### Some Other Interesting Algorithms
 - [Fibonacci Number: Recurrence, DP, Linear Algebra](algorithmCodes/others/fibonacci.py)
